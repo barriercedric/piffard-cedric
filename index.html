@@ -12,14 +12,14 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --creme:    #F8F4EC;
-      --creme2:   #F0EAD8;
-      --or:       #B89A4E;
-      --or-clair: #D4B96A;
-      --brun:     #2A1E0F;
-      --brun2:    #5C4427;
-      --brun3:    #8C6B44;
-      --blanc:    #FDFAF4;
+      --creme:    #FFFFFF;
+      --creme2:   #F7F6F3;
+      --or:       #9E8555;
+      --or-clair: #B9A070;
+      --brun:     #1A1510;
+      --brun2:    #3D3328;
+      --brun3:    #8C7D6A;
+      --blanc:    #FFFFFF;
     }
 
     html { scroll-behavior: smooth; }
@@ -236,21 +236,21 @@
 
     .apropos-texte {
       padding: 5rem 4rem;
-      background: var(--brun);
-      color: var(--creme2);
+      background: var(--creme2);
+      color: var(--brun);
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
-    .apropos-texte .eyebrow { color: var(--or-clair); }
+    .apropos-texte .eyebrow { color: var(--or); }
 
-    .apropos-texte .section-titre { color: var(--creme); }
+    .apropos-texte .section-titre { color: var(--brun); }
 
     .apropos-corps {
       font-size: 14px;
       font-weight: 300;
-      color: rgba(240,234,216,0.8);
+      color: var(--brun2);
       line-height: 1.9;
       margin-bottom: 2rem;
     }
@@ -274,7 +274,7 @@
     }
 
     .expo-ligne-lieu {
-      color: var(--creme2);
+      color: var(--brun);
       letter-spacing: 0.05em;
     }
 
@@ -282,10 +282,10 @@
       font-size: 9px;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: var(--or-clair);
+      color: var(--or);
     }
 
-    .expo-ligne-statut.bientot { color: rgba(240,234,216,0.4); }
+    .expo-ligne-statut.bientot { color: var(--brun3); }
 
     /* ── COURS ── */
     #cours {
@@ -364,15 +364,15 @@
     /* ── GALERIE ── */
     #galerie {
       padding: 5rem 4rem;
-      background: var(--brun);
+      background: var(--creme2);
     }
 
     .galerie-entete {
       padding: 0 0 3rem 0;
     }
 
-    .galerie-entete .eyebrow { color: var(--or-clair); }
-    .galerie-entete .section-titre { color: var(--creme); }
+    .galerie-entete .eyebrow { color: var(--or); }
+    .galerie-entete .section-titre { color: var(--brun); }
 
     /*
       GALERIE — 6 photos de toiles
@@ -590,29 +590,29 @@
 
     /* ── FOOTER ── */
     footer {
-      background: var(--brun);
+      background: var(--creme2);
       padding: 2rem 4rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-top: 0.5px solid rgba(184,154,78,0.2);
+      border-top: 0.5px solid rgba(158,133,85,0.2);
     }
 
     .footer-logo {
       font-family: 'Cormorant Garamond', serif;
       font-size: 16px;
       font-weight: 300;
-      color: var(--creme2);
+      color: var(--brun);
       letter-spacing: 0.06em;
     }
 
-    .footer-logo em { font-style: italic; color: var(--or-clair); }
+    .footer-logo em { font-style: italic; color: var(--or); }
 
     .footer-info {
       font-size: 10px;
       letter-spacing: 0.15em;
       text-transform: uppercase;
-      color: rgba(240,234,216,0.4);
+      color: var(--brun3);
     }
 
     /* ── MOBILE ── */
@@ -769,7 +769,7 @@
     <div class="galerie-entete">
       <span class="eyebrow">Œuvres</span>
       <span class="ligne-or"></span>
-      <h2 class="section-titre" style="color: var(--creme);">Sélection récente</h2>
+      <h2 class="section-titre">Sélection récente</h2>
     </div>
     <div class="galerie-grille">
       <div class="g-case"><img src="toile1.jpeg" alt="Peinture de Cédric Piffard" /><div class="g-case-label">Vendue</div></div>
